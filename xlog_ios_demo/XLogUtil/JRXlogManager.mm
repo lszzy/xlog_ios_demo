@@ -24,6 +24,7 @@ static JRXlogManager *shareInstance = nil;
 
 - (void)initXlog:(const char *)prefixName pathName:(NSString *)pathName {
     NSString* logPath = getXlogPath(pathName);
+    NSLog(@"%@", logPath);
     
     // set do not backup for logpath
     const char* attrName = "com.apple.MobileBackup";
@@ -60,6 +61,9 @@ static JRXlogManager *shareInstance = nil;
     mars::xlog::appender_close();
 }
 
+- (void)flushXlog {
+    mars::xlog::appender_flush_sync();
+}
 
 - (void)debugLogWithTag:(const char *)tag Content:(NSString *)content{
     [self log:XLoggerTypeDebug tag:tag content:content];

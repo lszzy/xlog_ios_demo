@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, XLoggerType) {
 /** 关闭Xlog */
 - (void)closeXlog;
 
+- (void)flushXlog;
+
 - (void)log:(XLoggerType)level tag:(const char *)tag content:(NSString *)content;
 
 - (void)infoLogWithTag:(const char *)tag Content:(NSString *)content;

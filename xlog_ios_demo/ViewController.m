@@ -55,19 +55,24 @@
 }
 
 - (IBAction)warningClick:(id)sender {
-    [[JRXlogManager shared] warningLogWithTag:JRDebugMessage Content:@"test warning log message"];
+    for (int i = 0; i < 5000; i++) {
+        [[JRXlogManager shared] warningLogWithTag:JRDebugMessage Content:@"test warning log message"];
+    }
 }
 
 - (IBAction)debugClick:(id)sender {
-    [[JRXlogManager shared] debugLogWithTag:JRDebugMessage Content:@"test debug log message"];
+    for (int i = 0; i < 5000; i++) {
+        [[JRXlogManager shared] debugLogWithTag:JRDebugMessage Content:@"test debug log message"];
+    }
+    [[JRXlogManager shared] flushXlog];
 }
 
 - (IBAction)infoLogClick:(id)sender {
-    [[JRXlogManager shared] infoLogWithTag:JRDebugMessage Content:@"test info log message"];
+    [[JRXlogManager shared] flushXlog];
 }
 
 - (IBAction)errorClick:(id)sender {
-    [[JRXlogManager shared] errorLogWithTag:JRDebugMessage Content:@"test error log message"];
+    [[JRXlogManager shared] closeXlog];
 }
 
 

@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     //这里没有登录，应该登录成功后 重新close 及初始化一遍
     //should login success do this code
-    [[JRXlogManager shared] closeXlog];
+    // [[JRXlogManager shared] closeXlog];
     [[JRXlogManager shared] initXlog:[@"test_xlog_userId" UTF8String] pathName:XlogDirName];
     
     [[JRXlogManager shared] infoLogWithTag:JRDebugMessage Content:@"App init()"];
@@ -41,6 +41,11 @@
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [[JRXlogManager shared] closeXlog];
 }
 
 
