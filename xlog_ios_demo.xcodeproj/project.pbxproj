@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC0649C2DCBA0AB0031CB51 /* mars.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC0649B2DCBA0AB0031CB51 /* mars.xcframework */; };
 		9B9EC3B364AC9D601B807062 /* Pods_xlog_ios_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0423CF35F1CB04AC576A4E5B /* Pods_xlog_ios_demo.framework */; };
 		B4B43DF627D3660A007F746E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B43DF527D3660A007F746E /* SceneDelegate.m */; };
 		B4B43DF927D3660A007F746E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B43DF827D3660A007F746E /* ViewController.m */; };
@@ -19,7 +20,6 @@
 		B4B43E2127D3671B007F746E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B43E2027D36714007F746E /* libz.tbd */; };
 		B4B43E2327D36723007F746E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B43E2227D36723007F746E /* CoreTelephony.framework */; };
 		B4B43E2527D3672D007F746E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B43E2427D3672D007F746E /* Foundation.framework */; };
-		B4B43E2827D36891007F746E /* mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B43E2727D36891007F746E /* mars.framework */; };
 		B4B43E3127D368AD007F746E /* LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B43E2C27D368AD007F746E /* LogUtil.m */; };
 		B4B43E3227D368AD007F746E /* LogHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4B43E2D27D368AD007F746E /* LogHelper.mm */; };
 		B4B43E3827D37140007F746E /* JRXlogManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4B43E3727D37140007F746E /* JRXlogManager.mm */; };
@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		0423CF35F1CB04AC576A4E5B /* Pods_xlog_ios_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xlog_ios_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC0649B2DCBA0AB0031CB51 /* mars.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = mars.xcframework; sourceTree = "<group>"; };
 		459BE23BB6E617A0CE45C9B7 /* Pods-xlog_ios_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xlog_ios_demo.release.xcconfig"; path = "Target Support Files/Pods-xlog_ios_demo/Pods-xlog_ios_demo.release.xcconfig"; sourceTree = "<group>"; };
 		48C0152DDCE8875556999FA5 /* Pods-xlog_ios_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xlog_ios_demo.debug.xcconfig"; path = "Target Support Files/Pods-xlog_ios_demo/Pods-xlog_ios_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B43DEE27D3660A007F746E /* xlog_ios_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xlog_ios_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +46,6 @@
 		B4B43E2027D36714007F746E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B4B43E2227D36723007F746E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B4B43E2427D3672D007F746E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B4B43E2727D36891007F746E /* mars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mars.framework; sourceTree = "<group>"; };
 		B4B43E2C27D368AD007F746E /* LogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtil.m; sourceTree = "<group>"; };
 		B4B43E2D27D368AD007F746E /* LogHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LogHelper.mm; sourceTree = "<group>"; };
 		B4B43E2E27D368AD007F746E /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 				B4B43E2527D3672D007F746E /* Foundation.framework in Frameworks */,
 				B4B43E2327D36723007F746E /* CoreTelephony.framework in Frameworks */,
 				B4B43E1F27D3670D007F746E /* libresolv.9.tbd in Frameworks */,
-				B4B43E2827D36891007F746E /* mars.framework in Frameworks */,
 				B4B43E2127D3671B007F746E /* libz.tbd in Frameworks */,
+				2FC0649C2DCBA0AB0031CB51 /* mars.xcframework in Frameworks */,
 				9B9EC3B364AC9D601B807062 /* Pods_xlog_ios_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +133,7 @@
 		B4B43E2627D3680C007F746E /* library */ = {
 			isa = PBXGroup;
 			children = (
-				B4B43E2727D36891007F746E /* mars.framework */,
+				2FC0649B2DCBA0AB0031CB51 /* mars.xcframework */,
 			);
 			path = library;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 			children = (
 				B4B43E3427D37005007F746E /* JRXlogManager.h */,
 				B4B43E3727D37140007F746E /* JRXlogManager.mm */,
-				B4B43E2C27D368AD007F746E /* LogUtil.m */,
+				B4B43E2F27D368AD007F746E /* LogHelper.h */,
 				B4B43E2D27D368AD007F746E /* LogHelper.mm */,
 				B4B43E2E27D368AD007F746E /* LogUtil.h */,
-				B4B43E2F27D368AD007F746E /* LogHelper.h */,
+				B4B43E2C27D368AD007F746E /* LogUtil.m */,
 			);
 			path = XLogUtil;
 			sourceTree = "<group>";

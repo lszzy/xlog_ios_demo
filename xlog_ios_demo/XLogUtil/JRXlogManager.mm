@@ -31,6 +31,7 @@ static JRXlogManager *shareInstance = nil;
     setxattr([logPath UTF8String], attrName, &attrValue, sizeof(attrValue), 0, 0);
     
     // init xlog
+    mars::xlog::appender_set_max_file_size(1024 * 1024);
 #if DEBUG
     xlogger_SetLevel(kLevelDebug);
     mars::xlog::appender_set_console_log(true);
